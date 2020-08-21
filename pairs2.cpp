@@ -5,7 +5,7 @@ using namespace std;
 vector<int> call(int *,int,int);
 
 int main() {
-  // cout << "Hello World!\n";
+
   int array[]= {10,20,30,40,50,60};
   int k=31;
   int size=6;
