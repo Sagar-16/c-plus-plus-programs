@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+void pairSum(int numbers[],int size,int key){
+  for(int i=0;i<size-1;i++)
+  {
+    for(int j=i+1;j<size;j++)
+    {
+      if(numbers[i]+numbers[j]== key){
+        cout<<numbers[i]<<","<<numbers[j];
+      }
+      cout<<endl;
+    }
+  }
+}
+int main()
+{
+  int numbers[100];
+  int size;
+  cin>>size;
+  for(int i=0;i<size;i++)
+  {
+    cin>>numbers[i];
+  }
+  int key;
+  cin>>key;
+  pairSum(numbers,size,key);
+  return 0;
+}
